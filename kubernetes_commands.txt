@@ -1,0 +1,23 @@
+k run --help
+kubectl config current-context 
+kubectl config get-contexts 
+k get pods
+k get pods --all-namespaces 
+k get namespaces 
+k --help
+
+k run nginx --image=nginx 
+k get pods
+
+# A pod is the smallest element on a kubernetes cluster
+# Pod of whales
+# A pod is not a container!
+# A pod is a collection of containers + other resources
+k describe pod kttpd-mischa | less
+k get pods -o wide
+
+#namespace
+k get pods --namespace <name-space-name>
+
+
+
