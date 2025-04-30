@@ -1,0 +1,37 @@
+k get pods -o wide
+
+NAME           READY   STATUS    RESTARTS      AGE     IP           NODE                   NOMINATED NODE   READINESS GATES
+kttpd-mischa   1/1     Running   1 (46h ago)   2d1h    10.42.0.21   lima-rancher-desktop   <none>           <none>
+nginx          1/1     Running   1 (46h ago)   2d1h    10.42.0.20   lima-rancher-desktop   <none>           <none>
+nginx-docs     1/1     Running   0             6m21s   10.42.0.24   lima-rancher-desktop   <none>           <none>
+nginx-yaml     1/1     Running   0             32m     10.42.0.23   lima-rancher-desktop   <none>           <none>
+
+k delete pod nginx
+k get pods
+
+k delete pod kttpd-mischa
+k get pods
+NAME         READY   STATUS    RESTARTS   AGE
+nginx-docs   1/1     Running   0          7m18s
+nginx-yaml   1/1     Running   0          33m
+
+
+k exec -it nginx-docs -- /bin/bash
+echo $SHELL
+exit
+
+k run httpd --image=httpd
+k exec -it httpd -- /bin/bash
+cat /etc/os-release
+apt update
+apt install tree
+exit
+k get pods -o wide
+
+k exec -it httpd -- /bin/bash
+ping 10.42.0.25
+apt install iputils-ping
+ping 10.42.0.24
+curl 10.42.0.24
+
+
