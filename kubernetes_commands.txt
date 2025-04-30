@@ -18,6 +18,19 @@ k get pods -o wide
 
 #namespace
 k get pods --namespace <name-space-name>
+k get pod nginx
+k edit pod kttpd-mischa
 
+
+k run nginx-yaml --image=nginx --dry-run=client -o yaml
+
+k run -h | less
+
+k create -f nginx.yaml
+# just create
+k apply -f nginx.yaml
+# verify the changes and create
+
+k describe pod nginx-yaml
 
 
