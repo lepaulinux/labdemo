@@ -1,0 +1,124 @@
+# deployments
+
+k create deployment -h | less
+k create deploy test --image=httpd --replicas=3
+k get pods
+kgp alias = k get pods
+
+k get deployments.apps
+k edit deployments.apps test
+
+k describe deployments.apps test
+
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  4m13s  deployment-controller  Scaled up replica set test-6546ccdcf9 from 0 to 3
+  Normal  ScalingReplicaSet  38s    deployment-controller  Scaled up replica set test-6546ccdcf9 from 3 to 5
+
+k delete deployments.apps test
+k get pods
+
+k run nginx-yaml --image=nginx --dry-run=client -o yaml
+
+k create deploy test --image=httpd --replicas=10 --dry-run=client -o yaml > deploy.yaml
+cat deploy.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test
+  name: test
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+      - image: httpd
+        name: httpd
+
+
+k apply -f deploy.yaml
+
+k get replicasets.apps
+# output
+NAME              DESIRED   CURRENT   READY   AGE
+test-6546ccdcf9   10        10        10      2m29s
+
+k describe replicasets.apps test-6546ccdcf9
+
+k create deploy -h | vim -
+
+
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy
+# Strategy
+.spec.strategy specifies the strategy used to replace old Pods by new ones. .spec.strategy.type can be "Recreate" or "RollingUpdate". "RollingUpdate" is the default value
+
+
+
+watch -n 1 "kubectl get pods"
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test
+  name: test
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+        - image: httpd:alpine3.18
+          name: httpd
+
+
+k apply -f deploy.yaml
+
+vim deploy.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  labels:
+    app: test
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: test
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+        - name: httpd
+          image: httpd:2-alpine3.21
+
+k apply -f deploy.yaml
+
+
+
+
+
