@@ -1,0 +1,9 @@
+apt/brew:
+tmux
+vim or nvim
+bash-completion (for Linux/WSL)
+
+
+brew:
+kubectl
+k9s
