@@ -1,0 +1,105 @@
+https://docs.mealie.io/documentation/getting-started/introduction/
+https://github.com/mealie-recipes/mealie
+https://github.com/mealie-recipes/mealie/pkgs/container/mealie
+
+k create deployment mealie --image=nginx --dry-run=client -o yaml > deployment.yaml
+cat deployment.yaml
+vim deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mealie
+  name: mealie
+  namespace: mealie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mealie
+  template:
+    metadata:
+      labels:
+        app: mealie
+    spec:
+      containers:
+      - image: ghcr.io/mealie-recipes/mealie:v1.2.0
+        name: mealie
+        ports:
+          - containerPort: 9000
+
+
+k apply -f deployment.yaml
+
+k get pods
+k get pods -o wide
+k describe pod mealie-5479dbb894-7sndx
+k delete pod mischa-mealie
+
+
+k port-forward -h | less
+k port-forward 
+k port-forward pods/mealie-5479dbb894-7sndx 9000
+
+# output
+Forwarding from 127.0.0.1:9000 -> 9000
+Forwarding from [::1]:9000 -> 9000
+# Open the browser and type localhost:9000
+
+git add .
+git commit -m "Add mealie deployment"
+git push
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mealie
+  name: mealie
+  namespace: mealie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mealie
+  template:
+    metadata:
+      labels:
+        app: mealie
+    spec:
+      containers:
+      - image: ghcr.io/mealie-recipes/mealie:v2.8.0
+        name: mealie
+        ports:
+          - containerPort: 9000
+
+watch -n 1 "kubectl get pods"
+k apply -f deployment.yaml
+k port-forward pods/mealie-5479dbb894-7sndx 9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

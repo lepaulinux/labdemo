@@ -1,0 +1,42 @@
+k get deployments.apps
+k delete deployments. apps test
+k get deployments.apps
+# output
+No resources found in default namespace.
+
+k get pods
+k delete pod httpd nginx-docs nginx-yaml
+k get pods
+
+k get namespaces
+# In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster.
+
+k create namespace mealie
+k get namespaces
+k create namespace mealie -o yaml --dry-run=client
+k get ns
+k get namespaces
+
+cd ..
+git add .
+git commit -m "Add mealie namespace"
+git push
+
+k run mischa --image=nginx
+
+k get pods -n mealie
+
+k get pods -n default
+k run mischa-mealie --image=nginx --namespace mealie
+k get pods -n mealie
+k get pods
+
+# change to another namespace
+k config current-context
+k config set-context --current --namespace=mealie
+k get pods
+k get pods -n default
+
+
+
+
