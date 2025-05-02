@@ -1,0 +1,12 @@
+k get deployments.apps
+k delete deployments. apps test
+k get deployments.apps
+# output
+No resources found in default namespace.
+
+k get pods
+k delete pod httpd nginx-docs nginx-yaml
+k get pods
+
+
+
