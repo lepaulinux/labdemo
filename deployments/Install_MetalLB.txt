@@ -1,0 +1,29 @@
+Install MetalLB (for true LoadBalancer support)
+If you really want to use type: LoadBalancer, you'll need to install MetalLB, a bare-metal load balancer.
+
+To install it on your cluster:
+
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.10/config/manifests/metallb-native.yaml
+
+Then configure an address pool, for example:
+
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  namespace: metallb-system
+  name: default-address-pool
+spec:
+  addresses:
+  - 192.168.5.240-192.168.5.250  # Choose unused IPs from your local network
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  namespace: metallb-system
+  name: l2-advertisement
+
+Apply with:
+kubectl apply -f metallb-config.yaml
+
+Once MetalLB is working, your LoadBalancer IPs will actually route correctly.
+

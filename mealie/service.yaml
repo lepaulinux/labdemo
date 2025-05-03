@@ -1,0 +1,15 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  namespace: mealie
+  name: mealie
+spec:
+  addresses:
+  - 192.168.0.240-192.168.0.250  # Choose unused IPs from your local network
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  namespace: metlie
+  name: l2-advertisement
+

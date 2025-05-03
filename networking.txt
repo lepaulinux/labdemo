@@ -1,0 +1,131 @@
+k get pods --all-namespaces -o wide
+
+# how to find whih CNI is in use:
+rdctl -h
+rdctl shell bash
+/etc/cni/net.d
+cat 10-flannel.conflist
+
+# Services
+# A service offers a consistent address to access a set of pods
+cd deployments
+cat deploy.yaml
+cp deploy.yaml frontend.yaml
+
+# open with vim and type the command:
+
+:%s/test/frontend/g
+
+k apply -f frontend.yaml
+k get pods
+
+# change between namespaces
+k config set-context --current --namespace=default
+
+
+k get service
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.43.0.1    <none>        443/TCP   5d20h
+
+
+k expose -h | less
+k expose deployment frontend --port 8080
+# output
+service/frontend exposed
+
+k get service
+k get service -o wide
+
+NAME         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE     SELECTOR
+frontend     ClusterIP   10.43.7.150   <none>        8080/TCP   31s     app=frontend
+kubernetes   ClusterIP   10.43.0.1     <none>        443/TCP    5d20h   <none>
+
+k get svc
+k get service
+
+
+# services: 
+# clusterIP - default. Creates cluster-wide IP for the service
+# NodePort - Exposes a port on each node allowing direct access to the service through any node's IP address.
+# LoadBalancer - Used for cloud providers. Will create an Azure LoadBalancer to route traffic into the cluster.
+(can also be used in K3s/Rancher Desktop)
+
+
+k get nodes -o wide
+
+k edit svc frontend
+# change type: ClusterIP to LoadBalancer
+
+k get svc
+NAME         TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)          AGE
+frontend     LoadBalancer   10.43.7.150   192.168.5.15   8080:32233/TCP   13m
+kubernetes   ClusterIP      10.43.0.1     <none>         443/TCP          5d21h
+
+k config set-context --current --namespace=mealie
+k get pods
+
+# port forward
+k port-forward pods/mealie-955d79855-475f5 9000
+
+k expose deployment mealie --port 9000
+
+k port-forward services/mealie 9000
+
+
+k get svc mealie -o yaml > service.yaml
+
+vim service.yaml
+cat service. yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mealie
+  name: mealie
+  namespace: mealie
+spec:
+  ports:
+  - port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    app: mealie
+  type: LoadBalancer
+
+
+k delete svc mealie
+k apply -f service.yaml
+k get svc mealie
+NAME     TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)          AGE
+mealie   LoadBalancer   10.43.59.236   192.168.5.15   9000:31715/TCP   12s
+
+kubectl get pods -n mealie
+kubectl describe svc mealie -n mealie
+kubectl describe pod <mealie-pod-name> -n mealie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

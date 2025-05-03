@@ -1,0 +1,1000 @@
+  239  sudo apt install git
+  240  get clone https://github.com/dnburgess/dockerinstall.git
+  241  git clone https://github.com/dnburgess/dockerinstall.git
+  242  ls
+  243  ls dockerinstall/
+  244  cd ..
+  245  mkdir davidtavarez
+  246  cd davidtavarez/
+  247  git clone https://github.com/davidtavarez/pwndb.git
+  248  ls
+  249  cd ..
+  250  mkddir The-Art-of-Hacking
+  251  mkdir The-Art-of-Hacking
+  252  cd The-Art-of-Hacking/
+  253  git clone https://github.com/The-Art-of-Hacking/h4cker.git
+  254  ls
+  255  ls h4cker/
+  256  cd ..
+  257  mkdir danielmiessler
+  258  cd danielmiessler/
+  259  git clone https://github.com/danielmiessler/SecLists.git
+  260  clear
+  261  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day5/for_loop_in_a_list.py
+  262  clear
+  263  /bin/python3 "/home/lptech/Downloads/Python_Files/100_days_of_Python/Day5/ The_Gauss_Challenge.py"
+  264  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day5/fizz_buzz_game.py
+  265  /bin/python3
+  266  cd Documents/GitHub/
+  267  ls
+  268  mkdir lepaulinux
+  269  cd lepaulinux/
+  270  git clone https://github.com/lepaulinux/100_days_of_python.git
+  271  ls
+  272  ls 100_days_of_python/
+  273  htop
+  274  sudo apt install htop
+  275  htop
+  276  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day5/fizz_buzz_game.py
+  277  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day4/learn_random.py
+  278  htop
+  279  sudo apt install iat
+  280  cd Downloads/
+  281  ls
+  282  iat 2024-11-19-raspios-bookworm-arm64.img raspios.iso
+  283  clear
+  284  ls
+  285  sudo dmidecode -s system-serial-number
+  286  lscpu
+  287  cd Downloads/
+  288  ls
+  289  cd Python_Files/
+  290  ls
+  291  cd Python_Study_Guide/
+  292  ls
+  293  mkdir Day11
+  294  ls Day10
+  295  code .
+  296  /bin/python3 /home/lptech/Downloads/Python_Files/Python_Study_Guide/Day11/re.py
+  297  /bin/python3 /home/lptech/Downloads/Python_Files/Python_Study_Guide/Day11/regular_exp.py
+  298  clear
+  299  /bin/python3 /home/lptech/Downloads/Python_Files/Python_Study_Guide/Day11/regular_exp.py
+  300  clear
+  301  /bin/python3 /home/lptech/Downloads/Python_Files/Python_Study_Guide/Day11/regular_exp.py
+  302  clear
+  303  /bin/python3 /home/lptech/Downloads/Python_Files/Python_Study_Guide/Day11/regular_exp.py
+  304  clear
+  305  ip a
+  306  ping 10.0.2.15
+  307  python3 -m http.server 8000
+  308  ls
+  309  cd Templates/
+  310  ls
+  311  touch docker-compose.yml
+  312  nano docker-compose.yml 
+  313  python3 -m http.server 8000
+  314  cd ..
+  315  ls
+  316  cd Downloads/
+  317  ls
+  318  python3 -m http.server 8000
+  319  sudo rm -rf *
+  320  cd Downloads/
+  321  history
+  322  python3 -m http.server 8000
+  323  ip a | grep inet6
+  324  ip a | grep inet
+  325  python3 -m http.server 8000
+  326  sudo apt install hardinfo
+  327  sudo apt autoremove
+  328  ls
+  329  cd Downloads/
+  330  ls
+  331  cd Python_Files/
+  332  ls
+  333  cd 100_days_of_Python/Day9
+  334  ls
+  335  nano
+  336  ls
+  337  clear
+  338  ls
+  339  python3 blind_auction_project.py 
+  340  htop
+  341  flatpak list
+  342  sudo flatpak install flathub io.github.getnf.embellish
+  343  clear
+  344  ls
+  345  ls Downloads/
+  346  sudo snap install ms-365-electron
+  347  sudo snapd install ms-365-electron
+  348  sudo apt install snap
+  349  sudo snapd install ms-365-electron
+  350  sudo snap install ms-365-electron
+  351  snap
+  352  sudo apt install snapd
+  353  sudo snap install ms-365-electron
+  354  sudo apt remove snap
+  355  sudo flatpak install flathub fr.free.Homebank
+  356  df .
+  357  df -h .
+  358  df -h VirtualBox\ VMs/
+  359  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  360  clear
+  361  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  362  clear
+  363  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  364  clear
+  365  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  366  clear
+  367  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  368  clear
+  369  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  370  clear
+  371  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  372  clear
+  373  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  374  /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/env/bin/python /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  375  ls
+  376  python art.py 
+  377  python3 art.py 
+  378  /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/env/bin/python /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/art.py
+  379  /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/env/bin/python /home/lptech/Downloads/Python_Files/100_days_of_Python/Day10/calc_v2.py
+  380  /bin/python3 /home/lptech/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/lptech/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  381  cd Downloads/
+  382  cd Python_Files/100_days_of_Python/Day10
+  383  ls
+  384  clear
+  385  ls
+  386  code .
+  387  clear
+  388  python3 calc_v2.py 
+  389  clear
+  390  code .
+  391  python3 -m venv env
+  392  source env/bin/activate
+  393  code .
+  394  /home/lptech/Downloads/Python_Files/Projects/Web_Scrapping_01/env/bin/python /home/lptech/Downloads/Python_Files/Projects/Web_Scrapping_01/main.py
+  395  clear
+  396  /home/lptech/Downloads/Python_Files/Projects/Web_Scrapping_01/env/bin/python /home/lptech/Downloads/Python_Files/Projects/Web_Scrapping_01/main.py
+  397  /bin/python3 /home/lptech/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/printEnvVariablesToFile.py /home/lptech/.vscode/extensions/ms-python.python-2025.0.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  398  ls
+  399  cd Downloads/
+  400  ls
+  401  cd Python_Files/
+  402  ls
+  403  mkdir Projects
+  404  cd Projects/
+  405  mkdir Web_Scrapping_01
+  406  cd Web_Scrapping_01/
+  407  clear
+  408  ls
+  409  python3 -m venv env
+  410  source env/bin/activate
+  411  pip3 install httpx
+  412  pip3 install selectolax
+  413  touch main.py
+  414  pip freeze > requirements.txt
+  415  code .
+  416  deactivate
+  417  sudo poweroff
+  418  code .
+  419  ssh root@192.168.0.18
+  420  cd /tmp/
+  421  l
+  422  nano
+  423  chmod +x ip.sh 
+  424  ls
+  425  cat ip.sh 
+  426  ./ip.sh 192.168.0
+  427  ./ip.sh 192.168.0.X
+  428  ./ip.sh 192.168.0
+  429  nano ip.sh 
+  430  ./ip.sh 192.168.0
+  431  wget https://cdn.fs.teachablecdn.com/CbIyLkOuS4GUH7TNFTFg
+  432  ls
+  433  ls -l
+  434  tar -xf peh-web-labs.tar.gz
+  435  cd Downloads/
+  436  ls
+  437  tar -xf peh-web-labs.tar.gz
+  438  ls
+  439  cd labs/
+  440  ls
+  441  cat docker-compose.yml 
+  442  touch readme.txt
+  443  nano readme.txt 
+  444  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day11/game.py
+  445  htop
+  446  top
+  447  htop
+  448  sudo apt install htop
+  449  sudo apt update
+  450  sudo apt upgrade
+  451  top
+  452  clear
+  453  sudo apt install htop
+  454  htop
+  455  clear
+  456  code .
+  457  sudo apt install libmpv1
+  458  sudo apt install stremio
+  459  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/list_any.py
+  460  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/printing_from_dictionary.py
+  461  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/clean_input.py
+  462  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  463  clear
+  464  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  465  clear
+  466  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  467  clear
+  468  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  469  clear
+  470  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  471  clear
+  472  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/debug.py
+  473  clear
+  474  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/bill_calculation.py
+  475  clear
+  476  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/bill_calculation.py
+  477  clear
+  478  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/bill_calculation.py
+  479  clear
+  480  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/bill_calculation.py
+  481  clear
+  482  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/bill_calculation.py
+  483  clear
+  484  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day12/guess_a_number.py
+  485  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day12/solution.py
+  486  code .
+  487  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/set_function.py
+  488  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/batch_function.py
+  489  clear
+  490  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/batch_function.py
+  491  cd Downloads/
+  492  ls
+  493  cd Python_Files/
+  494  ls
+  495  ls Projects/
+  496  cd Tests/
+  497  ls
+  498  clear
+  499  code .
+  500  cd Downloads/
+  501  ls
+  502  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day13/day13.py
+  503  clear
+  504  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day13/day13.py
+  505  clear
+  506  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day13/day13.py
+  507  clear
+  508  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec1.py
+  509  clear
+  510  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec1.py
+  511  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec2.py
+  512  clear
+  513  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec2.py
+  514  clear
+  515  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec2.py
+  516  ls
+  517  rm -rf Windows\ 10/
+  518  sudo rm -rf Windows\ 10/
+  519  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec3.py
+  520  clear
+  521  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec3.py
+  522  clear
+  523  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec3.py
+  524  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/lists/exec4.py
+  525  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exerc4.py
+  526  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exer5.py
+  527  clear
+  528  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exer5.py
+  529  clear
+  530  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exer5.py
+  531  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exec6.py
+  532  clear
+  533  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/Dictionary/exec6.py
+  534  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer1.py
+  535  clear
+  536  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer1.py
+  537  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer2.py
+  538  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer3.py
+  539  clear
+  540  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer3.py
+  541  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer4.py
+  542  clear
+  543  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer4.py
+  544  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/loop/exer3.py
+  545  code .
+  546  cd ~
+  547  ls
+  548  cd Desktop/
+  549  ls
+  550  rm *.py
+  551  ls
+  552  sudo reboot
+  553  sudo fsck -y /dev/sda1
+  554  clear
+  555  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day14/day14.py
+  556  code .
+  557  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day15/day15.py
+  558  clear
+  559  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day15/day15.py
+  560  clear
+  561  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day15/day15.py
+  562  cd Downloads/
+  563  mkdir llama-3
+  564  cd llama-3/
+  565  curl -fsSL https://ollama.com/install.sh | sh
+  566  ls
+  567  ls -l
+  568  ollama
+  569  ollama serve
+  570  ollama stop
+  571  ollama serve
+  572  ollama show
+  573  ollama ps
+  574  docker ps
+  575  ls
+  576  ls -l
+  577  cd ..
+  578  ll
+  579  rm rf llama-3/
+  580  rmdir -f llama-3/
+  581  rmdir  llama-3/
+  582  ls
+  583  rm tests,py 
+  584  ls
+  585  git init
+  586  cd ..
+  587  git init
+  588  ls
+  589  cd lepaulinux/
+  590  git init
+  591  git pull origin master
+  592  sudo apt update
+  593  sudp apt upgrade
+  594  sudo apt upgrade
+  595  grep '50 4B 03 04' yourfile.txt
+  596  xxd -p -c 4 yourfile.txt | grep '504b0304'
+  597  grep -o '50 4B 03 04 .. .. 0[1-9A-F] ..' yourfile.txt
+  598  ls
+  599  grep -o '50 4B 03 04 .. .. .. ..' yourfile.txt | awk '{print $3 $4}'
+  600  top yourfile.txt 
+  601  head yourfile.txt 
+  602  grep PK yourfile.txt 
+  603  grep '50 4B 03 04' yourfile.txt
+  604  grep "50 4B 03 04" yourfile.txt
+  605  clear
+  606  more yourfile.txt 
+  607  grep 50 4b 03 04 yourfile.txt 
+  608  grep "50 4b 03 04" yourfile.txt 
+  609  file Bob.zip 
+  610  zipinfo -v Bob.zip
+  611  zipinfo -v Bob.zip > zipinfo.txt
+  612  ls -lh zipinfo.txt 
+  613  grep "50 4b 03 04" yourfile.txt 
+  614  grep "99 01" yourfile.txt 
+  615  cd Downloads/
+  616  ls
+  617  python3 -m http.server 8000
+  618  ip a
+  619  python3 -m http.server 8000
+  620  cd Others/
+  621  python3 -m http.server 8000
+  622  ls
+  623  cd Downloads/Others/
+  624  python3 -m http.server 8000
+  625  ssh lptech@192.168.0.17
+  626  pip3 install colorgram.py
+  627  /home/lptech/Downloads/Python_Files/Spotify/env/bin/python /home/lptech/Downloads/Python_Files/Spotify/spotify_playlist.py
+  628  /bin/python3 /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  629  sudo apt install python3-venv
+  630  python3 -m venv env
+  631  source env/bin/activate
+  632  pip install spotify
+  633  code .
+  634  pip freeze > requirements.txt
+  635  pip list | grep spotify
+  636  pip uninstall spotify
+  637  pip install spotipy
+  638  pip freeze > requirements.txt
+  639  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/class_inheritance.py
+  640  rsyslog -v
+  641  sudo apt install rsyslog
+  642  man rsyslog
+  643  clear
+  644  sudo systemctl status rsylogs
+  645  sudo systemctl status rsylog
+  646  sudo systemctl start rsylog
+  647  sudo apt install rsyslogs
+  648  sudo apt install rsyslog
+  649  clear
+  650  /bin/python3 /home/lptech/Downloads/Python_Files/Tests/slicing_list.py
+  651  cpuinfo
+  652  sudo cpuinfo
+  653  sudo cpu
+  654  sudo cpupower 
+  655  sysinfo
+  656  sudo dmidecode -s system-serial-number
+  657  sudo dmidecode
+  658  sudo dmidecode | grep serial number
+  659  sudo dmidecode | grep "serial number"
+  660  sudo dmidecode | grep "serial"
+  661  sudo dmidecode | grep serial
+  662  sudo dmidecode | grep Serial
+  663  python3 -m http://localhost:8000
+  664  python3 -m http.server 8000
+  665  ip a
+  666  python3 -m http.server 8000
+  667  ip a | grep inet
+  668  python3 -m http.server 8000
+  669  /home/lptech/Downloads/Python_Files/Tests/YT_download/env/bin/python /home/lptech/Downloads/Python_Files/Tests/YT_download/main.py
+  670  cd /
+  671  ls
+  672  cd /home/lptech/Downloads/
+  673  /home/lptech/Downloads/Python_Files/Tests/YT_download/env/bin/python /home/lptech/Downloads/Python_Files/Tests/YT_download/main.py
+  674  pwd
+  675  clear
+  676  /home/lptech/Downloads/Python_Files/Tests/YT_download/env/bin/python /home/lptech/Downloads/Python_Files/Tests/YT_download/main.py
+  677  /bin/python3 /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  678  sudo ssh lptech@192.168.0.17
+  679  clear
+  680  htop
+  681  cd Downloads/
+  682  ls
+  683  cd Python_Files/Tests/
+  684  mkdir YT_download
+  685  cd YT_download/
+  686  python3 -m venv env
+  687  source env/bin/activate
+  688  pip install pytube
+  689  pip freeze > requirements.txt
+  690  code .
+  691  /home/lptech/Downloads/Python_Files/Tests/YT_download/env/bin/python /home/lptech/Downloads/Python_Files/Tests/YT_download/main.py
+  692  /bin/python3 /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariablesToFile.py /home/lptech/.vscode/extensions/ms-python.python-2025.2.0-linux-x64/python_files/deactivate/bash/envVars.txt
+  693  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day26/main.py
+  694  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day26/NATO-alphabet-start/main.py
+  695  /bin/python3 /home/lptech/Downloads/Python_Files/100_days_of_Python/Day26/NATO-alphabet-start/natto_alphabet.py
+  696  code .
+  697  python3 --version
+  698  pip3 --version
+  699  sudo apt update
+  700  sudo apt upgrade
+  701  sudo apt install python3 python3-pip -y
+  702  pip3 install pandas
+  703  clear
+  704  python3 -m venv env
+  705  source env/bin/activate
+  706  pip3 install pandas
+  707  pycharm .
+  708  clear
+  709  docker ps
+  710  sudo ssh lptech@192.168.0.143
+  711  clear
+  712  ls
+  713  cd Downloads/
+  714  ls
+  715  mkdir Ollama
+  716  cd Ollama/
+  717  curl -fsSL https://ollama.com/install.sh | sh
+  718  ollama pull llama2
+  719  ollama run llama2
+  720  ls
+  721  sudo dpkg -i Packet_Tracer822_amd64_signed.deb 
+  722  sudo apt-get install -f
+  723  sudo apt-get update
+  724  sudo apt-get upgrade
+  725  sudo apt --fix-broken install
+  726  sudo dpkg -i Packet_Tracer822_amd64_signed.deb
+  727  sudo dpkg --install Packet_Tracer822_amd64_signed.deb
+  728  sudo apt install gparted
+  729  sudo apt --fix-broken install
+  730  sudo apt update
+  731  sudo apt upgrade
+  732  sudo apt install gparted
+  733  sudo gparted .
+  734  sudo ssh root@192.168.0.17
+  735  sudo ssh lptech@192.168.0.17
+  736  ls
+  737  cd Downloads/Others/
+  738  touch install-docker.sh
+  739  chmod +x install-docker.sh
+  740  nano install-docker.sh
+  741  ./install-docker.sh
+  742  sudo apt update
+  743  ./install-docker.sh
+  744  sudo apt install docker.io docker-compose
+  745  DOCKER_USER="lptech"
+  746  sudo usermod -aG docker "$DOCKER_USER"
+  747  sudo systemctl enable docker
+  748  sudo systemctl start docker
+  749  docker --version
+  750  docker compose version
+  751  docker compose --version
+  752  sudo docker ps
+  753  clear
+  754  cd ..
+  755  ls
+  756  mkdir Docker
+  757  cd Docker/
+  758  mkdir Ollama
+  759  cd Ollama/
+  760  sudo curl -fsSL https://ollama.com/install.sh | sh
+  761  ollama pull llama2
+  762  ollama run llama2
+  763  #sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  764  cd Downloads/
+  765  cd Docker/
+  766  sudo docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  767  sudo docker os
+  768  sudo docker ps
+  769  docker ps
+  770  sudo apt update
+  771  sudo apt upgrade
+  772  sudo apt autoremove
+  773  htop
+  774  clear
+  775  ping 192.168.0.3
+  776  ssh root@192.168.0.3
+  777  clear
+  778  ls
+  779  nano update.sh
+  780  sudo chmod +x update.sh 
+  781  ./update.sh 
+  782  sudo apt autoremove 
+  783  sudo apt upgrade
+  784  clear
+  785  ssh root@192.168.0.59
+  786  [ -r /dev/kvm ] && [ -w /dev/kvm ] || echo 'insufficient privileges'
+  787  curl -s https://download.opensuse.org/repositories/isv:/Rancher:/stable/deb/Release.key | gpg --dearmor | sudo dd status=none of=/usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg
+  788  echo 'deb [signed-by=/usr/share/keyrings/isv-rancher-stable-archive-keyring.gpg] https://download.opensuse.org/repositories/isv:/Rancher:/stable/deb/ ./' | sudo dd status=none of=/etc/apt/sources.list.d/isv-rancher-stable.list
+  789  sudo apt update
+  790  sudo apt install rancher-desktop
+  791  ls
+  792  cd Documents/
+  793  ls
+  794  mkdir GitHub
+  795  cd GitHub/
+  796  git clone https://github.com/lepaulinux/labdemo.git
+  797  echo "# labdemo" >> README.md
+  798  git init
+  799  git add README.md
+  800  git commit -m "first commit"
+  801  git branch -M main
+  802  git remote add origin https://github.com/lepaulinux/labdemo.git
+  803  git push -u origin main
+  804  git config --global user.email "leanpaul79@gmail.com"
+  805  git config --global user.name "lepaulinux"
+  806  echo "# labdemo" >> README.md
+  807  git init
+  808  git add README.md
+  809  git commit -m "first commit"
+  810  git branch -M main
+  811  git remote add origin https://github.com/lepaulinux/labdemo.git
+  812  git push -u origin main
+  813  git remote add origin https://github.com/lepaulinux/labdemo.git
+  814  git branch -M main
+  815  git push -u origin main
+  816  ls ~/.ssh
+  817  ssh-keygen -t ed25519 -C "leanpaul79@gmail.com"
+  818  cat ~/.ssh/id_ed25519.pub
+  819  cd -
+  820  pwd
+  821  ls
+  822  cd GitHub/
+  823  ls
+  824  git remote set-url origin git@github.com:lepaulinux/labdemo.git
+  825  git push
+  826  git push --set-upstream origin mai
+  827  git push --set-upstream origin main
+  828  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  829  echo >> /home/lptech/.bashrc
+  830  sudo apt-get install build-essential
+  831  brew install gcc
+  832  brew install kubectl k9s
+  833  sudo apt install tmux vim
+  834  kubectl get pods
+  835  kubectl get pods -A
+  836  cd ~
+  837  ls
+  838  cd .kube
+  839  ls
+  840  vim config 
+  841  k9s
+  842  cd ..
+  843  vim .bashc
+  844  vim .bashrc
+  845  cat .bashrc 
+  846  vim .vimrc
+  847  cat .vimrc 
+  848  ls
+  849  cp .vimrc Documents/GitHub/
+  850  touch kubectl_alias.txt
+  851  vim kubectl_alias.txt 
+  852  mv kubectl_alias.txt Documents/GitHub/
+  853  cd Documents/GitHub/
+  854  git push --set-upstream origin main
+  855  git pull
+  856  git push
+  857  ls
+  858  mv .vimrc vimrc.txt
+  859  ls
+  860  git status
+  861  git add kubectl_alias.txt vimrc.txt labdemo/
+  862  git add kubectl_alias.txt vimrc.txt 
+  863  git commit -m "Add two new files"
+  864  git push
+  865  --help
+  866  tmux --help
+  867  k run --help
+  868  k run -h
+  869  cd Documents/GitHub/
+  870  clear
+  871  ls
+  872  docker run -it ubuntu
+  873  clear
+  874  kubectl config current-context 
+  875  kubectl config get-contexts 
+  876  k get pods
+  877  k get pods --all-namespaces 
+  878  k get namespaces 
+  879  history
+  880  k --help
+  881  k explain pods
+  882  tmux
+  883  ls
+  884  cd Documents/GitHub/
+  885  ls
+  886  cd ..
+  887  mkdir Github_Python
+  888  cd Git
+  889  cd Github_Python/
+  890  gh repo clone lepaulinux/100_days_of_python
+  891  git clone lepaulinux/100_days_of_python
+  892  wget https://github.com/lepaulinux/100_days_of_python.git
+  893  ls
+  894  git clone https://github.com/lepaulinux/100_days_of_python.git
+  895  ls
+  896  cd 100_days_of_python/
+  897  ls
+  898  ls -l
+  899  kmdir day1..15
+  900  mkdir day[1..15]
+  901  ls
+  902  for i in {1..15}; do mkdir "day$i"; done
+  903  ls
+  904  clear
+  905  ls
+  906  mv Blackjack.py day11
+  907  mv day14.py day14
+  908  mv blind_auction_project.py day9
+  909  mv calc.py day10
+  910  mv calculate_love_score.py  day8
+  911  mv coffee_machine.py day14
+  912  mv guess_a_number.py  day12
+  913  mv logo.py day10
+  914  mv password_generator_v1.py day5
+  915  mv tip_calculator.py  day2
+  916  mv treasure_island.py  day3
+  917  mv who_will_pay_the_bill_v1.py  day4
+  918  ls
+  919  mv band_name_generator.py day5
+  920  mv Day13.zip day13
+  921  clear
+  922  ls
+  923  mv 'Day6 - project'/ day6
+  924  mv Maze.py day2
+  925  clear
+  926  ls
+  927  git add .
+  928  git commit -m "Folders created"
+  929  git push
+  930  ls
+  931  cd Documents/Github
+  932  cd Documents/
+  933  ls
+  934  cd GitHub/
+  935  ls
+  936  cd labdemo/
+  937  clear
+  938  k get pod nginx
+  939  k edit pod kttpd-mischa 
+  940  k run nginx-yaml --image=nginx --dry-run=clinet -o yaml
+  941  k run nginx-yaml --image=nginx --dry-run=client -o yaml
+  942  k run -h | less
+  943  k run nginx --image=nginx --dry-run=client -o yaml > nginxl.yaml
+  944  ls
+  945  mv nginxl.yaml nginx.yaml
+  946  vim nginx.yaml 
+  947  cat nginx.yaml 
+  948  k get pods
+  949  k apply -f nginx.yaml 
+  950  k describe pod nginx-yaml | less
+  951  la
+  952  git add .
+  953  git commit -m "nginx pod"
+  954  git push
+  955  ls
+  956  git remote -v
+  957  git push
+  958  cd ..
+  959  git remote -v
+  960  git add .
+  961  git submodule add .
+  962  cd labdemo/
+  963  ls
+  964  mv nginx.yaml ..
+  965  ls
+  966  cd ..
+  967  ls
+  968  rm labdemo/
+  969  rmdir labdemo/
+  970  rm -rf labdemo/
+  971  git add .
+  972  git commit -m "nginx pod"
+  973  git push
+  974  vim nginx-docs.yaml
+  975  cat nginx-docs.yaml 
+  976  vim nginx-docs.yaml 
+  977  k apply -f nginx-docs.yaml 
+  978  vim nginx-docs.yaml
+  979  k apply -f nginx-docs.yaml 
+  980  kubectl get pods 
+  981  k describe pod nginx-docs 
+  982  k get pods -o wide
+  983  k delete pod nginx
+  984  k get pods
+  985  k delete pod kttpd-mischa 
+  986  k get pods
+  987  k exec -it nginx-docs --/bin/bash
+  988  k exec -it nginx-docs -- /bin/bash
+  989  k get pod -h
+  990  k get pod -h | less
+  991  k get pods all
+  992  k get pod all
+  993  k run pod kttpd
+  994  k run httpd --image=httpd
+  995  k get pods
+  996  k exec -it httpd -- /bin/bash
+  997  tmux
+  998  pwd
+  999  cd Documents/
+ 1000  ls
+ 1001  cd GitHub/
+ 1002  clear
+ 1003  k get pods -o wide
+ 1004  cd Documents/GitHub/
+ 1005  clear
+ 1006  k apply -f deploy.yaml 
+ 1007  vim deploy
+ 1008  vim deploy.yaml 
+ 1009  clear
+ 1010  k apply -f deploy.yaml 
+ 1011  vim deploy.yaml 
+ 1012  clear
+ 1013  k apply -f deploy.yaml 
+ 1014  vim deploy.yaml 
+ 1015  clear
+ 1016  k apply -f deploy.yaml 
+ 1017  cp deploy.yaml deploy-recreate.yaml
+ 1018  vim deploy-recreate.yaml 
+ 1019  k apply -f deploy-recreate.yaml 
+ 1020  vim deploy-recreate.yaml 
+ 1021  k apply -f deploy-recreate.yaml 
+ 1022  vim deploy-recreate.yaml 
+ 1023  k apply -f deploy-recreate.yaml 
+ 1024  k apply -f deploy.yaml 
+ 1025  at update
+ 1026  echo $#
+ 1027  apt update
+ 1028  echo $#
+ 1029  exit
+ 1030  cd Documents/GitHub/
+ 1031  ls
+ 1032  ll
+ 1033  clear
+ 1034  k get pods
+ 1035  clear
+ 1036  k get pods
+ 1037  k create deploy test --image=httpd --replicas=3
+ 1038  k get pods
+ 1039  kgp
+ 1040  k get deployments.apps 
+ 1041  k edit deployments.apps test
+ 1042  k get pods
+ 1043  k describe deployments.apps test
+ 1044  k delete deployments.apps test
+ 1045  kgp
+ 1046  k create deploy test --image=httpd --replicas=10 --dry-run=clinet -o yaml > deploy.yaml
+ 1047  k create deploy test --image=httpd --replicas=10 --dry-run=client -o yaml > deploy.yaml
+ 1048  cat deploy.yaml 
+ 1049  vim deploy.yaml 
+ 1050  k apply -f deploy.yaml 
+ 1051  k get pods
+ 1052  cat deploy.yaml 
+ 1053  k get deployments.apps test
+ 1054  k get replicasets.apps test
+ 1055  k get replicasets.apps
+ 1056  k describe replicasets.apps test-6546ccdcf9
+ 1057  k create deploy -h | vim -
+ 1058  vim deploy.yaml 
+ 1059  watch -n 1 "kubectl get pods"
+ 1060  cat deploy.yaml 
+ 1061  vim deploy.yaml 
+ 1062  k edit deployments.apps test
+ 1063  cat deploy.yaml 
+ 1064  vim deploy.yaml 
+ 1065  watch -n 1 "kubectl get pods"
+ 1066  clear
+ 1067  git add .
+ 1068  git commit -m "working with deployments"
+ 1069  git push
+ 1070  cd Documents/GitHub/
+ 1071  cd mealie/
+ 1072  k apply -f deployment.yaml 
+ 1073  cd Documents/GitHub/
+ 1074  clear
+ 1075  k get deployments.apps 
+ 1076  k delete deployments.apps test
+ 1077  k get deployments.apps 
+ 1078  k get pods
+ 1079  k delete pod httpd nginx-docs nginx-yaml 
+ 1080  kgp
+ 1081  k get namespaces 
+ 1082  git status
+ 1083  ls
+ 1084  k create namespace mealie -o yaml --dry-run=client
+ 1085  gs
+ 1086  mkdir deployments
+ 1087  mv * deployments
+ 1088  ls
+ 1089  ls deployments/
+ 1090  mkdir mealie
+ 1091  cd mealie/
+ 1092  la
+ 1093  k create ns mealie --dry-run=client -o yaml > namespace.yaml
+ 1094  vim namespace.yaml 
+ 1095  k get namespaces 
+ 1096  k apply -f namespace.yaml 
+ 1097  get get ns
+ 1098  k get ns
+ 1099  cd ..
+ 1100  git add .
+ 1101  git commit -m "Add mealie namespace"
+ 1102  git push
+ 1103  cd mealie/
+ 1104  k get ns
+ 1105  clear
+ 1106  k run mischa --image=nginx
+ 1107  k get pods -m mealie
+ 1108  k get pods -n mealie
+ 1109  k get pods -n default
+ 1110  k get pods 
+ 1111  k run mischa-mealie --image=nginx --namespace mealie
+ 1112  k get pods -n mealie
+ 1113  k get pods
+ 1114  k get current-context 
+ 1115  k config current-context 
+ 1116  k config set-context --current --namespace=mealie
+ 1117  k config current-context 
+ 1118  k get pods
+ 1119  k get pods -n default
+ 1120  clear
+ 1121  k create deployment mealie --image=nginx --dry-run=client -o yaml > deployment.yaml
+ 1122  k get deployments.apps 
+ 1123  ls
+ 1124  cat deployment.yaml 
+ 1125  vim deployment.yaml 
+ 1126  cat deployment.yaml 
+ 1127  vim deployment.yaml 
+ 1128  cat deployment.yaml 
+ 1129  vim deployment.yaml 
+ 1130  cat deployment.yaml 
+ 1131  k apply -f deployment.yaml 
+ 1132  cat deployment.yaml 
+ 1133  vim deployment.yaml 
+ 1134  k apply -f deployment.yaml 
+ 1135  k get pods
+ 1136  k get pods -o wide
+ 1137  k describe pod mealie-5479dbb894-7sndx 
+ 1138  k get pods
+ 1139  k delete pod mischa-mealie 
+ 1140  k port-forward -h | less
+ 1141  k port-forward pods/mealie-5479dbb894-7sndx 9000
+ 1142  git add .
+ 1143  git commit -m "Add melie deployment"
+ 1144  git push
+ 1145  vim deployment.yaml 
+ 1146  watch -n 1 "kubectl get pods"
+ 1147  k port-forward pods/mealie-955d79855-475f5 9000
+ 1148  clear
+ 1149  git add .
+ 1150  git commit -m "Mealie first recipe"
+ 1151  git push
+ 1152  ls
+ 1153  cd ..
+ 1154  ls
+ 1155  git add .
+ 1156  git commit -m "Mealie commands"
+ 1157  git push
+ 1158  git add .
+ 1159  git commit -m "adding the text files"
+ 1160  git push
+ 1161  git add .
+ 1162  git commit -m "organized in folders"
+ 1163  git push
+ 1164  clear
+ 1165  ssh-keygen -t ed25519_new -C "leanpaul79@gmail.com"
+ 1166  ssh-keygen -t ed25519 -C "leanpaul79@gmail.com"
+ 1167  cat ~/.ssh/python_key.pub
+ 1168  cat ~/.ssh/id_ed25519.pub
+ 1169  cd ~/.ssh/
+ 1170  ls
+ 1171  clear
+ 1172  ssh-keygen -t ed25519 -C "leanpaul79@gmail.com"" -f ~/.ssh/python_key
+ 1173  ssh-keygen -t ed25519 -C "leanpaul79@gmail.com" -f ~/.ssh/python_key
+ 1174  cat ~/.ssh/python_key.pub
+ 1175  ssh-keygen -t ed25519 -C "leanpaul79@gmail.com" -f ~/.ssh/linux_key
+ 1176  cat ~/.ssh/linux_key.pub
+ 1177  clear
+ 1178  git add .
+ 1179  git commit -m "adding folders"
+ 1180  git push
+ 1181  pwd
+ 1182  cd Documents/
+ 1183  ls
+ 1184  gh repo clone piyushsachdeva/CKA-2024
+ 1185  git clone https://github.com/piyushsachdeva/CKA-2024.git
+ 1186  ls
+ 1187  cd CKA-2024/
+ 1188  ls
+ 1189  ls Resources/
+ 1190  ls Resources/Day01
+ 1191  ls Resources/Day10
+ 1192  ls Resources/Day45
+ 1193  ls Resources/Day40
+ 1194  2025 - 1979
+ 1195  calc
+ 1196  calc 2025-1979
+ 1197  2025-1979
+ 1198  clear
+ 1199  sudo apt-get update
+ 1200  sudo apt-get install ./docker-desktop-amd64.deb
+ 1201  sudo apt autoremove
+ 1202  sudo apt update
+ 1203  sudo nano /etc/apt/sources.list.d/docker.list
+ 1204  sudo apt update
+ 1205  lsb_release -cs
+ 1206  sudo apt upgrade
+ 1207  ls
+ 1208  cd ../..
+ 1209  cd Downloads/
+ 1210  ls
+ 1211  sudo apt-get install ./docker-desktop-amd64.deb
+ 1212  sudo apt autoremove
+ 1213  docker compose version
+ 1214  docker --version
+ 1215  systemctl --user enable docker-desktop
+ 1216  cd deployments/
+ 1217  ls
+ 1218  vim frontend.yaml 
+ 1219  k apply -f frontend.yaml 
+ 1220  k get pods
+ 1221  k delete pod mischa 
+ 1222  k get pods
+ 1223  k get service
+ 1224  k expose deployment frontend --port 8080
+ 1225  k get service
+ 1226  k get service -o wide
+ 1227  k get svc
+ 1228  k edit svc frontend 
+ 1229  k get service
+ 1230  k config set-context --current=mealie
+ 1231  k get namespaces 
+ 1232  k config set-context ?
+ 1233  k config set-context --curent=mealie
+ 1234  k config set-context --current --namespace=mealie
+ 1235  k get namespaces 
+ 1236  k get pods
+ 1237  history
+ 1238  history > history.txt
