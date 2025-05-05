@@ -4,12 +4,11 @@ metadata:
   name: mealie
   namespace: mealie
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: mealie
   ports:
     - port: 9000
       targetPort: 9000
       protocol: TCP
-      nodePort: 32000  # You can choose any port between 30000–32767
 

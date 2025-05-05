@@ -1,0 +1,110 @@
+A PersistentVolume (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource. PVs are volume plugins like Volumes, but have a lifecycle independent of any individual Pod that uses the PV. 
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: foo-pv
+spec:
+  storageClassName: ""
+  claimRef:
+    name: foo-pvc
+    namespace: foo
+  ...
+
+cd ..
+cd mealie
+vim storage.yaml
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mealie-data
+  namespace: mealie
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Mi
+
+
+k apply -f storage.yaml
+
+k get pods
+
+k get persistentvolumeclaims 
+NAME          STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+mealie-data   Pending                                      local-path     <unset>                 2m39s
+
+k get persistentvolume or k get pvc
+vim deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mealie
+  name: mealie
+  namespace: mealie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mealie
+  template:
+    metadata:
+      labels:
+        app: mealie
+    spec:
+      containers:
+      - image: ghcr.io/mealie-recipes/mealie:v2.8.0
+        name: mealie
+        ports:
+          - containerPort: 9000
+        volumeMounts:
+          - mountPath: app/data
+            name: mealie-data
+      volumes:
+        - name: mealie-data
+          persistentVolumeClaim:
+            claimName: mealie-data
+
+
+k apply -f deployment.yaml
+k get pvc
+NAME          STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+mealie-data   Bound    pvc-0a50f5d0-2d82-4308-810c-3b9f63a89493   500Mi      RWO            local-path     <unset>                 20m
+
+k get persistentvolume
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-0a50f5d0-2d82-4308-810c-3b9f63a89493   500Mi      RWO            Delete           Bound    mealie/mealie-data   local-path     <unset>                          2m30s
+
+
+k describe pods mealie-69859cf8b6-2n642
+Volumes:
+  mealie-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+
+
+k get pods -o wide
+k delete deployments.apps mealie
+k get pvc
+k get pv
+ deplk apply -f deployment.yaml
+
+k get storageclasses.storage.k8s.io
+NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+local-path (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  7d21h
+
+
+
+
+
+
+
+
+
+
+
+
+

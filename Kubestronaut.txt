@@ -1,0 +1,11 @@
+The Kubestronaut program is an initiative by the Cloud Native Computing Foundation (CNCF) designed to recognize individuals who have demonstrated exceptional commitment and expertise in Kubernetes and cloud-native technologies. Launched in March 2024, the program honors those who have successfully obtained all five of CNCF’s Kubernetes-related certifications:
+
+KCNA – Kubernetes and Cloud Native Associate
+
+KCSA – Kubernetes and Cloud Security Associate
+
+CKA – Certified Kubernetes Administrator
+
+CKAD – Certified Kubernetes Application Developer
+
+CKS – Certified Kubernetes Security Specialist

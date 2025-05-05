@@ -104,6 +104,25 @@ kubectl get pods -n mealie
 kubectl describe svc mealie -n mealie
 kubectl describe pod <mealie-pod-name> -n mealie
 
+# Ingress
+
+Ingress exposes HTTp and HTTPS routes from outside the cluster to sevice within the cluster
+Features: 
+- SSL / TLS termination
+- External URLs
+- Path based routing
+
+Ingress Controller
+- NGINX
+- Traefik
+- Cilium
+- Cloud: AGIC
+
+
+
+
+
+
 
 
 

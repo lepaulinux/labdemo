@@ -1,0 +1,98 @@
+k get namespaces
+
+k config set-context --current --namespace=mealie
+
+k get pods
+
+k describe mealie-955d79855-475f5 
+
+cd ..
+
+cd deployments
+
+vim nginx-pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+  name: nginx-storage
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: scratch-volume
+      mountPath: /scratch  # Default content directory
+  volumes:
+  - name: scratch-volume
+    emptyDir:    # This is temporary storage; it is deleted when the Pod stops
+      sizeLimit: 500Mi
+
+
+k apply -f nginx-pod.yaml
+
+k get pods
+
+k describe pod nginx-storage
+
+# output:
+Volumes:
+  scratch-volume:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+
+
+k exec -it nginx-storage -- bash
+
+# modified nginx-pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-storage
+  labels:
+    app: nginx-storage
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+        - name: scratch-volume
+          mountPath: /scratch  # Default content directory
+    - name: busybox
+      image: busybox
+      command: ["/bin/sh", "-c"]
+      args: ["sleep 1000"]
+      volumeMounts:
+        - name: scratch-volume
+          mountPath: /scratch
+  volumes:
+    - name: scratch-volume
+      emptyDir:
+        sizeLimit: 500Mi  # This is temporary storage; it is deleted when the Pod stops
+
+
+k delete pod nginx-storage
+k describe pod nginx-storage
+k exec -it nginx-storage -h
+k exec -it nginx-storage -c nginx-storage -- bash
+cd scratch
+touch hello.txt
+k exec -it nginx-storage -c busybox -- sh
+ls scratch
+
+k delete pod nginx-storage
+k apply -f nginx-pod.yaml
+k exec -it nginx-storage -c nginx -- bash
+ls scratch
+# diretory will be empty
+
+
+
+
+
+
+k apply -f nginx-pod.yaml
+
+
+
