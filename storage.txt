@@ -87,11 +87,6 @@ k exec -it nginx-storage -c nginx -- bash
 ls scratch
 # diretory will be empty
 
-
-
-
-
-
 k apply -f nginx-pod.yaml
 
 

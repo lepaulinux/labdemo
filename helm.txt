@@ -1,0 +1,33 @@
+k config set-context --current --namespace=default
+
+k get pods
+
+
+https://helm.sh/
+
+brew install helm
+
+helm -h
+
+helm ls -A
+
+helm repo list
+
+helm repo update
+
+helm show values <add-repository> | vim -
+
+helm repo remove homarr-labs
+
+k delete namespace homarr
+
+
+helm uninstall -n default homarr
+
+helm install homarr /ajnart/homarr --namespace homarr --create-namespace --values=values.yaml
+
+help upgrade -n homarr homarr ghcr.io/ajnart/homarr  --values=values.yaml
+
+
+
+
